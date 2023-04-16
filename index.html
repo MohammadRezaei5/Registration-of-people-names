@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- scripts -->
+    <script src="./app.js" defer></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- wrapper-start -->
+    <div class="wrapper">
+      <div class="container">
+        <!-- Form-start -->
+        <div class="form-wrapper">
+          <form class="form" action="#">
+            <div class="inp">
+              <div>
+                <label class="border-right" for="myInput">
+                  <span>اســـمــت رو بگو:</span>
+                </label>
+              </div>
+              <div class="form-control">
+                <input
+                  autocomplete="off"
+                  type="text"
+                  class="inp-name"
+                  id="myInput"
+                  name="name"
+                />
+                <span> لطفا نام خود را وارد کنید </span>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <button class="btn" id="btn-send" onclick="showValues()">
+                بفرست
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Form-end -->
+        <!-- line-start -->
+        <div class="line"></div>
+        <!-- line-end -->
+        <div class="border-right">
+          <span> اسامی شرکت کنندگان:</span>
+          <div class="remove-btn-wrapper">
+            <button class="remove-all-btn">
+              حذف همه
+              <i class="fa-solid fa-dumpster"></i>
+            </button>
+          </div>
+        </div>
+        <!-- List-box-start -->
+        <div class="box">
+          <div class="lsit">
+            <ul class="box_ul" id="output"></ul>
+          </div>
+        </div>
+        <!-- List-box-end -->
+      </div>
+      <footer>
+        <div>
+          <p>
+            دکمه جهت تست درست کارکردن
+            <span class="border-dash">(LocalStorage)</span>
+          </p>
+        </div>
+        <div>
+          <button onclick="refreshPage()" class="reload-btn">
+            رفرش صفحه
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </footer>
+    </div>
+    <!-- wrapper-end -->
+    <!-- fix another time -->
+    <div class="fix-wrapper">
+      <ul class="fix-ul">
+        <li>
+          این نوشته برای خودم هست، وقتی صفحه رفرش میشود ترتیب اسامی تغییر میکند،
+          درستش کن
+        </li>
+        <li>اگر وقت کردی حالت موبایل ، هاور رو به صورت لمسی بکن</li>
+      </ul>
+    </div>
+    <!-- fix another time -->
+  </body>
+</html>
