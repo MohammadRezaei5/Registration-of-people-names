@@ -196,16 +196,6 @@ footer {
   padding: 2px;
   border-bottom: 2px dashed #f700ff;
 }
-/* fix */
-.fix-wrapper {
-  position: absolute;
-  bottom: 26px;
-  font-size: 7px;
-}
-.fix-ul {
-  display: flex;
-  gap: 5px;
-}
 /* media query */
 @media only screen and (max-width: 600px) {
   .wrapper {
